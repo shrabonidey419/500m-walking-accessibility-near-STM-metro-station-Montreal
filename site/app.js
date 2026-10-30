@@ -28,7 +28,7 @@ function colourFor(value) {
 const layerControl = L.control.layers(null, {}, { collapsed: false }).addTo(map);
 
 // ---- Metro stations ----
-fetch('../data/MetroStops.geojson')
+fetch('../Data/MetroStops.geojson')
   .then(function (response) {
     if (!response.ok) { throw new Error('HTTP ' + response.status + ' loading MetroStops.geojson'); }
     return response.json();
